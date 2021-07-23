@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST" action="{{ url_for('user') }}" >
+    {{ form.hidden_tag() }}
+    <p>{{ form.username.label }} {{ form.username }}
+        {% if form.username.errors %}
+            {% for error in form.username.errors %}
+                {{ error }}
+            {% endfor %}
+        {% endif %}
+        </p>
+
+    <p>{{ form.email.label }} {{ form.email }}</p>
+    <p>{{ form.sex.label }} {{ form.sex }}</p>
+    <p>{{ form.submit.label }} {{ form.submit }}</p>
+</form>
+</body>
+</html>
