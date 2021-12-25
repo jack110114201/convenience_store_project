@@ -1,6 +1,0 @@
-main.py
-import app_recom
-
-app_recom.py
-import json
-
