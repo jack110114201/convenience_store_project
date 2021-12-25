@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Doritos</folder>
+	<filename>images (11).jpg</filename>
+	<path>C:\Users\Tibame_25\Downloads\Doritos-20210824T091345Z-001\Doritos\images (11).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>210</width>
+		<height>240</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Doritos</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>30</xmin>
+			<ymin>4</ymin>
+			<xmax>175</xmax>
+			<ymax>230</ymax>
+		</bndbox>
+	</object>
+</annotation>

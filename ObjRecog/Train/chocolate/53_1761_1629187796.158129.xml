@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Chocolate</folder>
+	<filename>53_1761_1629187796.158129.png</filename>
+	<path>C:\Users\Tibame_25\Desktop\Chocolate\53_1761_1629187796.158129.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>180</width>
+		<height>120</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Chocolate</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>47</ymin>
+			<xmax>144</xmax>
+			<ymax>85</ymax>
+		</bndbox>
+	</object>
+</annotation>

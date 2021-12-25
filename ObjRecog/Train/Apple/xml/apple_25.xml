@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Apple</folder>
+	<filename>apple_25.jpg</filename>
+	<path>C:\Users\Tibame_25\Desktop\store_project\opencv\物件\Apple\apple_25.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>350</width>
+		<height>241</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Apple</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>170</xmin>
+			<ymin>26</ymin>
+			<xmax>339</xmax>
+			<ymax>194</ymax>
+		</bndbox>
+	</object>
+</annotation>

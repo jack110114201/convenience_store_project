@@ -1,0 +1,26 @@
+<annotation>
+	<folder>banana</folder>
+	<filename>banana_40.jpg</filename>
+	<path>C:\Users\Tibame_25\Desktop\AI_Bigdata\TFB102_T4\label\banana\banana_40.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>634</width>
+		<height>420</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>banana</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>95</xmin>
+			<ymin>29</ymin>
+			<xmax>547</xmax>
+			<ymax>329</ymax>
+		</bndbox>
+	</object>
+</annotation>
