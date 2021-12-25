@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>會員資料註冊</title>
+<!--         <link rel="stylesheet" href="style.css"> -->
+        <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+        <script>
+            function initializeLiff(myLiffId) {
+                liff
+                    .init({
+                        liffId: "1656219234-DyzMg4Vz"
+                    })
+                    .then(() => {
+                        // start to use LIFF's api
+//                         liff.getProfile().then(profile {
+//                             const userId = profile.userId;
+//                             const displayname = profile.displayName;
+//                         }).catch(function (error) {
+//                             console.log('error', err);
+//                         });
+                    })
+                    .catch((err) => {
+                    });
+            }
+            initializeLiff("1656219234-DyzMg4Vz");
+
+            function postData(url, data) {
+            return fetch(url, {
+                body: JSON.stringify(data),
+                cache: 'no-cache',
+                headers: {
+                    'user-agent': 'Mozilla/4.0 MDN Example',
+                    'content-type': 'application/json'
+                },
+                method: 'POST',
+                mode: 'cors',
+            })
+                .then(response => response.json()) // 輸出成 json
+            }
+            function initializeApp(data) {
+                liff.getProfile().then(profile {
+                    const userId = profile.userId;
+                    const displayname = profile.displayName;
+                }).catch(function (error) {
+                    console.log('error', err);
+                });
+            }
+            
+        </script>
+    </head>
+    <body>
+        <p>會員資料註冊</p>
+        <form action="/finsh" method="POST">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="userId" name="userid">{{userId}}</li>
+            </ul>
+            姓名 <input type="text" name="name">
+            年齡 <input type="text" name="age">
+            <form action=""method="POST">
+            <p>婚姻狀況</p>
+            <input type="checkbox"name="marital"value="A"/>A
+            <input type="checkbox"name="marital"value="B"/>B
+            <input type="checkbox"name="marital"value="U"/>U
+            <p>年收入區間 ?</p>
+            <input type="checkbox"name="Salary"value="19"/>20K以下
+            <input type="checkbox"name="Salary"value="29"/>30K以下
+            <input type="checkbox"name="Salary"value="39"/>40K以下
+            <input type="checkbox"name="Salary"value="49"/>50K以下
+            <input type="checkbox"name="Salary"value="50"/>50K以上
+            <p>家庭 ?</p>
+            <input type="checkbox"name="family"value="Single Male"/>Single Male
+            <input type="checkbox"name="family"value="Single Female"/>Single Female
+            <input type="checkbox"name="family"value="2 Adults No Kids"/>2 Adults No Kids
+            <input type="checkbox"name="family"value="2 Adults Kids"/>2 Adults Kids
+            <input type="checkbox"name="family"value="1 Adult Kids"/>1 Adult Kids
+            <input type="checkbox"name="family"value="Other"/>Other
+            <p>是否為房主 ?</p>
+            <input type="checkbox"name="house"value="yes"/>Yes
+            <input type="checkbox"name="house"value="no"/>No
+            <p>家庭人數 ?</p>
+            <input type="checkbox"name="familys"value="1"/>1
+            <input type="checkbox"name="familys"value="2"/>2
+            <input type="checkbox"name="familys"value="3"/>3
+            <input type="checkbox"name="familys"value="4"/>4
+            <input type="checkbox"name="familys"value="5"/>5+
+            <button type="submit">送出</button>
+        </form>        
+    </body>
+</html>
+
+
